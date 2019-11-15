@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FengmapBaseMap</string>
+
+    <string name="demo_title_main">Fengmap Demo 地图展示 V%1$s</string>
+    <string name="demo_title_basemap">基本地图显示</string>
+    <string name="demo_title_main_basemap">基本地图显示 - FMMapBasic</string>
+    <string name="demo_title_init">地图初始化设置</string>
+    <string name="demo_title_main_init">地图初始化设置 - FMMapInitialize</string>
+    <string name="map_init_tips">地图初始状态设置为:\n地图中心点: 楼层(groupId): groupId=%1$d\n坐标(mapCoord): x=%2$.0f , y=%3$.2f\n旋转角度(rotate): angle=%4$.2f\n倾斜角度(tilt): angle=%5$.2f\n显示级别: level=%6$d</string>
+    <string name="demo_title_theme">主题切换</string>
+    <string name="demo_title_main_theme">主题切换 - FMMapThemeSwitch</string>
+    <string name="theme_btn_switch">切换主题</string>
+    <string name="tab_theme_local1">主题1: 2001</string>
+    <string name="tab_theme_local2">主题2: 2002</string>
+    <string name="demo_title_mode">2D/3D切换</string>
+    <string name="demo_title_main_mode">2D/3D切换 - FMMap2D3D</string>
+    <string name="tab_mode_2D">二维地图</string>
+    <string name="tab_mode_3D">三维地图</string>
+    <string name="demo_title_operate">地图操作(程序控制)</string>
+    <string name="demo_title_main_operate">地图操作(程序控制) - FMMapOperation</string>
+    <string name="operate_btn_move">地图中心点移动至: 楼层(groupId): groupId=%1$d\n坐标(mapCoord): x=%2$.0f , y=%3$.0f</string>
+    <string name="operate_btn_zoom">地图级别改为：%1$d</string>
+    <string name="operate_btn_tilt">地图倾斜角度改为：%1$.1f</string>
+    <string name="operate_btn_rotate">地图旋转角度改为：%1$.1f</string>
+    <string name="demo_title_groups">楼层显示控制</string>
+    <string name="demo_title_main_groups">楼层显示控制 - FMMapGroups</string>
+    <string name="title_groups_single">单层显示</string>
+    <string name="title_groups_multi">多层显示</string>
+    <string name="demo_title_layers">图层显示控制</string>
+    <string name="demo_title_main_layers">图层显示控制 - FMMapLayers</string>
+    <string name="tab_layers_label">标注</string>
+    <string name="tab_layers_facility">设施</string>
+    <string name="demo_title_transform">坐标转换</string>
+    <string name="demo_title_main_transform">坐标转换 - FMMapCoordTransform</string>
+    <string name="map_transform_tips">当前楼层(groupId): groupId=%1$d\n原始屏幕坐标(point): x=%2$.0f, y=%3$.0f\n转换后的地理坐标(mapCoord): x=%4$.0f, y=%5$.0f\n转换后的屏幕坐标(point): x=%6$.0f, y=%7$.0f</string>
+</resources>

@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/install
+
+Name: hokuyo_node
+Description: Description of hokuyo_node
+Version: 1.7.8
+Cflags: -I/home/heinrich/catkin_ws/install/include
+Libs: -L/home/heinrich/catkin_ws/install/lib -llibhokuyo
+Requires: rosconsole

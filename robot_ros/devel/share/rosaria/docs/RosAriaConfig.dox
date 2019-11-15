@@ -1,0 +1,14 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~trans_accel" : \b [double] Translational acceleration (m/s^2) min: -std::numeric_limits<double>::infinity(), default: 0, max: std::numeric_limits<double>::infinity()
+- \b "~trans_decel" : \b [double] Translational deceleration (m/s^2) min: -std::numeric_limits<double>::infinity(), default: 0, max: std::numeric_limits<double>::infinity()
+- \b "~lat_accel" : \b [double] Lateral acceleration (m/s^2) min: -std::numeric_limits<double>::infinity(), default: 0, max: std::numeric_limits<double>::infinity()
+- \b "~lat_decel" : \b [double] Lateral deceleration (m/s^2) min: -std::numeric_limits<double>::infinity(), default: 0, max: std::numeric_limits<double>::infinity()
+- \b "~rot_accel" : \b [double] Rotational acceleration (rad/s^2) min: -std::numeric_limits<double>::infinity(), default: 0, max: std::numeric_limits<double>::infinity()
+- \b "~rot_decel" : \b [double] Rotational deceleration (rad/s^2) min: -std::numeric_limits<double>::infinity(), default: 0, max: std::numeric_limits<double>::infinity()
+- \b "~TicksMM" : \b [int] Encoder ticks/mm, or 0 to disable and use robot internal setting min: -2147483648, default: 0, max: 2147483647
+- \b "~DriftFactor" : \b [int] Value in 1/8192 increments to be added or subtracted from the left encoder ticks in order to compensate for tire differences. Or -99999 to disable and use robot internal setting min: -2147483648, default: -99999, max: 2147483647
+- \b "~RevCount" : \b [int] The number of differential encoder ticks for a 180-degree revolution of the robot.Or 0 to disable and use robot internal setting. min: -2147483648, default: 0, max: 2147483647
+

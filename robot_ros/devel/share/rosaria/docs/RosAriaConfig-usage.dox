@@ -1,0 +1,15 @@
+\subsubsection usage Usage
+\verbatim
+<node name="RosAria" pkg="rosaria" type="RosAria">
+  <param name="trans_accel" type="double" value="0" />
+  <param name="trans_decel" type="double" value="0" />
+  <param name="lat_accel" type="double" value="0" />
+  <param name="lat_decel" type="double" value="0" />
+  <param name="rot_accel" type="double" value="0" />
+  <param name="rot_decel" type="double" value="0" />
+  <param name="TicksMM" type="int" value="0" />
+  <param name="DriftFactor" type="int" value="-99999" />
+  <param name="RevCount" type="int" value="0" />
+</node>
+\endverbatim
+

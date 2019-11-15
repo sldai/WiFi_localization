@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/devel
+
+Name: move
+Description: Description of move
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/heinrich/catkin_ws/devel/lib 
+Requires: 

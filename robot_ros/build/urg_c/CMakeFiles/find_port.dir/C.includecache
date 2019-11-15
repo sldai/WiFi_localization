@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/heinrich/catkin_ws/src/urg_c/current/include/urg_c/urg_serial_utils.h
+
+/home/heinrich/catkin_ws/src/urg_c/current/samples/find_port.c
+urg_c/urg_serial_utils.h
+/home/heinrich/catkin_ws/src/urg_c/current/samples/urg_c/urg_serial_utils.h
+stdio.h
+-
+

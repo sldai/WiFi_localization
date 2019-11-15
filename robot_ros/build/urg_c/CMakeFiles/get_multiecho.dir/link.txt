@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3 -DNDEBUG   CMakeFiles/get_multiecho.dir/current/samples/get_multiecho.c.o  -o /home/heinrich/catkin_ws/devel/lib/urg_c/get_multiecho -rdynamic /home/heinrich/catkin_ws/devel/lib/libopen_urg_sensor.so /home/heinrich/catkin_ws/devel/lib/libliburg_c.so -lrt -lm -Wl,-rpath,/home/heinrich/catkin_ws/devel/lib: 

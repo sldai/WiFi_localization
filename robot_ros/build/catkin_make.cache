@@ -1,0 +1,2 @@
+amr-ros-config/description:amr-ros-config/gazebo:amr-ros-config/launch:beginner_tutorials:cartographer_ros/cartographer_ros:cartographer_ros/cartographer_ros_msgs:cartographer_ros/cartographer_rviz:evarobot_odom_subs:hokuyo/driver_common/driver_base:hokuyo/driver_common/driver_common:hokuyo/driver_common/timestamp_tools:hokuyo_node:laser_proc:move:p3dx_description:p3dx_navigation:pub_odom:rosaria:rosaria_client:simple_navigation_goals:urg_c
+-DCATKIN_DEVEL_PREFIX=/home/heinrich/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/heinrich/catkin_ws/install -G Unix Makefiles

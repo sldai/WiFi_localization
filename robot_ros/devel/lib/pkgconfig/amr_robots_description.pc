@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/devel
+
+Name: amr_robots_description
+Description: Description of amr_robots_description
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/heinrich/catkin_ws/devel/lib 
+Requires: robot_state_publisher urdf geometry_msgs sensor_msgs std_msgs

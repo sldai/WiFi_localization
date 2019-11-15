@@ -1,0 +1,5 @@
+ARIA Version 2.8.0
+August 22, 2013
+Adept MobileRobots
+Linux 
+gcc-4.6.3

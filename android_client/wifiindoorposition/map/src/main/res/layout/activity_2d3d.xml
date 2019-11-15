@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.fengmap.FMDemoBaseMap.widget.NavigationBar
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="@string/demo_title_mode">
+    </com.fengmap.FMDemoBaseMap.widget.NavigationBar>
+
+
+    <com.fengmap.android.map.FMMapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_bar">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/map_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Degree                        "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showDegree" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/map_view"
+            android:layout_toLeftOf="@+id/navigation_bar"
+            android:layout_toStartOf="@+id/navigation_bar"
+            android:layout_marginRight="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginTop="48dp"
+            android:onClick="StartOrStop"
+            android:id="@+id/control" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigation_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="136dp"
+            android:id="@+id/show" />
+
+        <EditText
+            android:text="39.105.14.245"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ip"
+            android:layout_alignBaseline="@+id/startDectect"
+            android:layout_alignBottom="@+id/startDectect"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="23dp"
+            android:layout_marginEnd="23dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:text="Step                             "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showStep"
+                android:layout_weight="0.23" />
+        </LinearLayout>
+
+        <EditText
+            android:text="ipService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ipService"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/ip"
+            android:layout_alignRight="@+id/ip"
+            android:layout_alignEnd="@+id/ip" />
+
+        <Button
+            android:text="sendPose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/control"
+            android:layout_toRightOf="@+id/control"
+            android:layout_toEndOf="@+id/control"
+            android:id="@+id/sendPose"
+            android:onClick="sendPose" />
+
+    </com.fengmap.android.map.FMMapView>
+
+    <LinearLayout
+        android:id="@+id/layout_mode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="@string/tab_mode_2D"
+            android:textColor="@color/inner_text_selector"
+            android:id="@+id/d2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_text_selector"
+            android:enabled="false"
+            android:textSize="14sp"
+            android:text="@string/tab_mode_3D"
+            android:textColor="@color/inner_text_selector"
+            android:id="@+id/d3" />
+
+    </LinearLayout>
+
+</RelativeLayout>

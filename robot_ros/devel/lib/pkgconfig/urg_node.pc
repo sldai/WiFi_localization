@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/devel
+
+Name: urg_node
+Description: Description of urg_node
+Version: 0.1.11
+Cflags: -I/home/heinrich/catkin_ws/devel/include -I/home/heinrich/catkin_ws/src/urg_node/include
+Libs: -L/home/heinrich/catkin_ws/devel/lib -lurg_c_wrapper -lurg_node_driver
+Requires: dynamic_reconfigure laser_proc message_runtime nodelet rosconsole roscpp sensor_msgs std_msgs std_srvs urg_c

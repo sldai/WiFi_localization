@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/devel
+
+Name: driver_base
+Description: Description of driver_base
+Version: 1.6.8
+Cflags: -I/home/heinrich/catkin_ws/devel/include -I/home/heinrich/catkin_ws/src/hokuyo/driver_common/driver_base/include -I/usr/include
+Libs: -L/home/heinrich/catkin_ws/devel/lib 
+Requires: message_runtime std_msgs

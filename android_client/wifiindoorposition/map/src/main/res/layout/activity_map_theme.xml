@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.fengmap.FMDemoBaseMap.widget.NavigationBar
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="@string/demo_title_theme">
+    </com.fengmap.FMDemoBaseMap.widget.NavigationBar>
+
+
+    <com.fengmap.android.map.FMMapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_bar"/>
+
+    <LinearLayout
+        android:id="@+id/layout_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_switch"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_local_theme1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text_selector"
+            android:button="@null"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/tab_theme_local1"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/driver_line"/>
+
+        <TextView
+            android:id="@+id/btn_local_theme2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/tab_theme_local2"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/btn_switch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_checkbox"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/theme_btn_switch"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

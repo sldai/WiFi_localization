@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.fengmap.FMDemoBaseMap.widget.NavigationBar
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="@string/demo_title_layers">
+    </com.fengmap.FMDemoBaseMap.widget.NavigationBar>
+
+
+    <com.fengmap.android.map.FMMapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <CheckBox
+            android:id="@+id/cb_layers_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/bg_text_selector"
+            android:text="@string/tab_layers_label"
+            android:checked="true"
+            android:gravity="center"
+            android:textColor="@color/inner_text_selector"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <CheckBox
+            android:id="@+id/cb_layers_facility"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/bg_text_selector"
+            android:text="@string/tab_layers_facility"
+            android:textColor="@color/inner_text_selector"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

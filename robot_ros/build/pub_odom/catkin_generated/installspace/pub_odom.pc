@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/install
+
+Name: pub_odom
+Description: Description of pub_odom
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/heinrich/catkin_ws/install/lib 
+Requires: 

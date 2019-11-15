@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/install
+
+Name: p3dx_description
+Description: Description of p3dx_description
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/heinrich/catkin_ws/install/lib 
+Requires: 

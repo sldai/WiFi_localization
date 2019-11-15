@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/devel
+
+Name: urg_c
+Description: Description of urg_c
+Version: 1.0.404
+Cflags: -I/home/heinrich/catkin_ws/src/urg_c/current/include
+Libs: -L/home/heinrich/catkin_ws/devel/lib -lliburg_c
+Requires: 

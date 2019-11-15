@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/install
+
+Name: cartographer_rviz
+Description: Description of cartographer_rviz
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/heinrich/catkin_ws/install/lib 
+Requires: message_runtime cartographer_ros_msgs eigen_conversions roscpp rviz

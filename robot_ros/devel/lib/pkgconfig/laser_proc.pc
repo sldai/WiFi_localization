@@ -1,0 +1,8 @@
+prefix=/home/heinrich/catkin_ws/devel
+
+Name: laser_proc
+Description: Description of laser_proc
+Version: 0.1.4
+Cflags: -I/home/heinrich/catkin_ws/src/laser_proc/include
+Libs: -L/home/heinrich/catkin_ws/devel/lib -llaser_proc_library -llaser_publisher -llaser_transport -llaser_proc_ROS -lLaserProcNodelet
+Requires: roscpp sensor_msgs rosconsole nodelet

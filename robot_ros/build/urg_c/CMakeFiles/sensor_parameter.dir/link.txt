@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3 -DNDEBUG   CMakeFiles/sensor_parameter.dir/current/samples/sensor_parameter.c.o  -o /home/heinrich/catkin_ws/devel/lib/urg_c/sensor_parameter -rdynamic /home/heinrich/catkin_ws/devel/lib/libopen_urg_sensor.so /home/heinrich/catkin_ws/devel/lib/libliburg_c.so -lrt -lm -Wl,-rpath,/home/heinrich/catkin_ws/devel/lib: 
