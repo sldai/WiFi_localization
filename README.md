@@ -10,28 +10,22 @@ Automatic system: the robot is adopted to autonomously build and maintain the fi
 Formal Introduction
 -------------------
 
+---
+title: "Autonomous Robots Based Indoor WiFi Localization System"
+permalink: /publication/2019-08-01-WiFi-localization
+paperurl: 'https://arxiv.org/pdf/1911.11825'
+---
+Indoor localization is a key technique to provide services about interaction with the indoor environment such as Virtual Reality and airport navigation. However, GPS can hardly be used in the indoor space, due to the obstruction from buildings itself. WiFi, which are widely used, are rich and accurate signal sources for localization. Much like using lidar or camera for mapping and localzation, we first build the WiFi signal strength map, then localize the users' smartphone according to their received signal strength. 
 
-Pursuit-evasion is a classic research topic in mobile robotics and gaming theory. Deep reinforcement learning advances rapidly in recent years, and solves many decision-making problem like go, atari and robots control. However, learning an end-to-end strategy in a complex task can be prohibitive. We propose a hierachical framework which composes the neural network and classical tracking algorithms and outperforms either single method.
+Signal strength: Wireless signal gradually become weak during propagation, thus it can reflects the distance from the receiver to the emitter, which are the smartphone and the WiFi access point in our context. Suppose there are $n$ access points in the indoor space, the smartphone can acquire $n$ signal strengths, thus we can represent all information as a $n$ dimensional vector. And in different locations, the vector are supposed to be different, that's how we can do localization.
 
-Formally speaking, the pursuit-evasion problem involves two agents chasing and running in a plane. Both agents have identical dynamics settings and can control the linear and angular velocities. The pursuer's goal is to reach the evader within a certain radius, while the evader tries to avoid this. There are obstacles on the plane, anyone fails if it gets in collision. In this project, we only consider the pursuit process.
+Mapping stage: for localization, we first need a high quality map, which represents the WiFi signal strength at each location. A mobile robot is used to survey the environment, and a smartphone mounted on it collects the information. After collection completed, we build a Gaussian process model from the data, which maps each location to the signal strength vector. You can refer to the paper for more detail. Finally, we get the following map:
 
-![policy structure](https://sldai.github.io/images/RL_pursuit/hierachical_structure.png)
+![WiFi signal map](http://sldai.github.io/images/WiFi_localization/heatmap_nosojourn.png) 
 
-Above figure shows our hierarchical policy model. The top layer maps the environment and goal information to an high-level decision which determines which of the basic strategies to use, then the chosen strategy outputs the primitive action. The two basic strategies, dynamics window approach (DWA) and proportion guidance (PG) are specially picked.
+Localization stage: when the smartphone receives the signals, we search over the map to find locations whose signals match the received signals best. Also we use step detector built in the phone and compass to inference the person's motion state. A particle filter fuses these two information and estimates the localization. The following video shows the result:
 
-DWA is a practical navigation method in mobile robots. It samples possible actions and evaluate each by the specified criterion, so that the robot can navigate to a static location without collision. But it cannot directly applies to track the moving target. PG is widely used in missile tracking, the only goal is to reach the moving target as fast as possible. However, it does not consider collisions. The following figures shows that use either along cannot achieve our goal, i.e. catching the moving target without collison.
+<iframe width="1046" height="404" src="https://www.youtube.com/embed/FdbGS7_Mi3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<table>
-<tbody>
-  <tr>
-    <td><img src="https://sldai.github.io/images/RL_pursuit/dwa_fail.png"></td>
-    <td><img src="https://sldai.github.io/images/RL_pursuit/pg_fail.png"></td>
-  </tr>
-</tbody>
-</table>
-
-Using a neural network to change the tracking policy according to the condition is our solution. We adopts the proximal policy optimization algorithm to train the network. And the final performance is show
-
-![hybrid](https://sldai.github.io/images/RL_pursuit/hybrid_mine.gif)
 
 
